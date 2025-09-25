@@ -1,0 +1,41 @@
+<!-- 5. Escreva um algoritmo que leia três valores inteiros e mostre-os em ordem decrescente. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let valor1 = parseInt(prompt('Digite um valor:'))
+        let valor2 = parseInt(prompt('Digite mais um valor:'))
+        let valor3 = parseInt(prompt('Digite outro valor:'))
+
+        if (valor1 > valor2 && valor1 > valor3) {
+            if (valor2 > valor3) {
+                console.log(valor1 + " > " + valor2 + " > " + valor3);
+            } else {
+                console.log(valor1 + " > " + valor2 + " > " + valor3);
+            }
+        } else if (valor2 > valor1 && valor2 > valor3) {
+            if (valor1 > valor3) {
+                console.log(valor2 + " > " + valor1 + " > " + valor3);
+            } else {
+                console.log(valor2 + " > " + valor3 + " > " + valor1);
+            }
+        } else {
+            if (valor1 > valor2) {
+                console.log(valor3 + " > " + valor1 + " > " + valor2);
+            } else {
+                console.log(valor3 + " > " + valor2 + " > " + valor1);
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
