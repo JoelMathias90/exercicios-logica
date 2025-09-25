@@ -1,0 +1,27 @@
+<!-- 2. Faça um algoritmo que leia 3 valores a, b, c, quaisquer e encontre o maior dos 3 escrevendo-o com
+a mensagem: É O MAIOR. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Digite valor de A:"))
+        let b = parseInt(prompt("Digite valor de B:"))
+        let c = parseInt(prompt("Digite valor de C:"))
+
+        if (a > b && a > c) {
+            console.log(a + ' é o maior');
+        } else if (b > a && b > c) {
+            console.log(b + ' é o maior');
+        } else {
+            console.log(c + ' é o maior');
+        }
+
+    </script>
+</body>
+</html>
