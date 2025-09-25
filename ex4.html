@@ -1,0 +1,33 @@
+<!-- 4. Faça um algoritmo que leia um nº inteiro e mostre uma mensagem indicando se este número é par
+ou ímpar, e se é positivo ou negativo. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = parseInt(prompt("Digite um número:"))
+
+        if (num >= 0) {
+            if (num % 2 === 0) {
+                console.log(num + ' é um número positivo par');
+            } else {
+                console.log(num + ' é um número positivo ímpar');
+            }
+        } else {
+            if (num % 2 === 0) {
+                console.log(num + ' é um número negatvo par');
+            } else {
+                console.log(num + ' é um número negativo ímpar');
+            }
+        }
+    </script>
+</body>
+
+</html>
