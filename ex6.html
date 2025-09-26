@@ -1,0 +1,35 @@
+<!-- . Escrever um algoritmo que lê 3 valores a, b, c, e calcula e escreve a média ponderada com peso 5
+ para o maior dos 3 valores e peso 2.5 para os outros dois.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt('Digite um valor:'))
+        let b = parseInt(prompt('Digite um valor:'))
+        let c = parseInt(prompt('Digite um valor:'))
+        let pa, pb, pc;
+
+        if (a >= b &&a >= c) {
+            pa = 5; pb = 3; pc = 3
+        } else if (b >= a && b >= c) {
+            pa = 3; pb = 5; pc = 3
+        } else {
+            pa = 3; pb = 3; pc = 5
+        }
+
+        let media = ((a * pa) + (b * pb) + (c * pc)) / pa + pb + pc
+
+        console.log(`Média ponderada: ${media}`);
+        
+    </script>
+</body>
+
+</html>
